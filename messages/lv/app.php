@@ -1,4 +1,4 @@
 <?php
 return[
-    'Welcome!' => 'Laipni lūdzam'
+    'Welcome!' => 'Sveiki!'
 ];

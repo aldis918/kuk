@@ -2,13 +2,14 @@
 return[
     'id' => 'kuk',
     'basePath' => realpath( __DIR__ . '/../'),
-    'sourceLanguage' => 'lv',
-    'language' => 'en',
     'bootstrap' => ['debug'],
     'components' => [
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'showScriptName' => false
+            'showScriptName' => false,
+            'class' => 'codemix\localeurls\UrlManager',
+            'languages' => ['lv', 'en'],
+            'enableDefaultLanguageUrlCode' => true
         ],
         'request' => [
             'cookieValidationKey' => 'secret code'
